@@ -1,0 +1,33 @@
+{% extends "!layout.html" %}
+
+{%- block extrahead %}
+{{ super() }}
+
+<link rel="stylesheet" href="../_static/default.css" type="text/css">
+<meta name="google-site-verification" content="rKELnLnT-Vm9xKLXSPS-13bPq_r5VPzCUxnMDfNFPHY" />
+<meta name="google-site-verification" content="jQjkkn8yDzYdYe0ib6IDXXlhHf4fulQRmjW3F3ovWtw" />
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-530c64087def677e"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'right',
+      'numPreferredServices' : 5
+    }
+  });
+</script>
+{% endblock %}
+
+{% block comments %}
+<div id="disqus_thread"></div>
+  <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://openerpbook.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//openerpbook.disqus.com/count.js" async></script>
+{% endblock %}
